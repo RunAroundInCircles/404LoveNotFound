@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './python.css';
 import c from './characters/C.png';
 import cplusplus from './characters/C++.png';
+import soundfile from './music/twins.wav';
+import Sound from 'react-sound';
 
 var count = 0;
 class CRoute extends Component{
@@ -85,6 +87,13 @@ class CRoute extends Component{
 	render(){
 		return(
 			<body>
+				<Sound
+					url={soundfile}
+					playStatus={Sound.status.PLAYING}
+					onLoading={this.handleSongLoading}
+					onPlaying={this.handleSongPlaying}
+					onFinishedPlaying={this.handleSongFinishedPlaying}
+				/>
 				<textarea id = 'textArea2' rows = '4' cols= '50' onClick= {this.nextMessage}>*As you told them this, you see C++'s eyes fall down in sadness.*</textarea>
 				<div class = "bottomleft">
 					<img id = "c"src= {c} alt="c" hidden ="true"/>

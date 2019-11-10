@@ -4,6 +4,8 @@ import './python.css';
 import Fortran from './characters/Fortran.png';
 import DenyHer from './denyHer.js';
 import FortranDate from './fortranDate.js'
+import soundfile from './music/fortran.wav';
+import Sound from 'react-sound';
 
 var count = 0;
 class GetToKnowHer extends Component{
@@ -74,6 +76,13 @@ class GetToKnowHer extends Component{
 	render(){
 		return(
 			<body>
+				<Sound
+					url={soundfile}
+					playStatus={Sound.status.PLAYING}
+					onLoading={this.handleSongLoading}
+					onPlaying={this.handleSongPlaying}
+					onFinishedPlaying={this.handleSongFinishedPlaying}
+				/>
 				<textarea id = 'textArea2' rows = '4' cols= '50' onClick= {this.nextMessage}>*You spend a lot of time with her that week as the other two team members barely help.*</textarea>
 				<button type="button"id = "fortranDate" onClick={this.fortranDate} hidden = "true">Say Yes!</button>
 				<button type="button"id = "denyHer" onClick={this.denyHer} hidden = "true">Say No...</button>

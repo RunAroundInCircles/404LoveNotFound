@@ -1,5 +1,7 @@
 import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
+import soundfile from './music/python.wav';
+import Sound from 'react-sound';
 
 var count = 0;
 class DatePython extends Component{
@@ -42,7 +44,16 @@ class DatePython extends Component{
 	
 	render(){
 		return(
-			<textarea id = 'textArea3' rows = '4' cols= '50' onClick= {this.nextMessage}>Python: Good Ending!</textarea>
+			<body>
+				<Sound
+					url={soundfile}
+					playStatus={Sound.status.PLAYING}
+					onLoading={this.handleSongLoading}
+					onPlaying={this.handleSongPlaying}
+					onFinishedPlaying={this.handleSongFinishedPlaying}
+				/>
+				<textarea id = 'textArea3' rows = '4' cols= '50' onClick= {this.nextMessage}>Python: Good Ending!</textarea>
+			</body>
 		)
 	}
 	

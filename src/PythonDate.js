@@ -5,6 +5,8 @@ import './python.css';
 import park from'./characters/park.jpg';
 import DatePython from './DatePython.js';
 import DontDatePython from './DontDatePython.js';
+import soundfile from './music/python.wav';
+import Sound from 'react-sound';
 
 var count = 0;
 class PythonDate extends Component{
@@ -78,6 +80,13 @@ class PythonDate extends Component{
 	render(){
 		return(
 			<body>
+				<Sound
+					url={soundfile}
+					playStatus={Sound.status.PLAYING}
+					onLoading={this.handleSongLoading}
+					onPlaying={this.handleSongPlaying}
+					onFinishedPlaying={this.handleSongFinishedPlaying}
+				/>
 				<textarea id = 'textArea2' rows = '4' cols= '50' onClick= {this.nextMessage}>*You meet up with Python after school.*</textarea>
 				<button type="button"id = "boyfriend" onClick={this.datePython} hidden = "true">Of course Python-Senpai!</button>
 				<button type="button"id = "noboyfriend" onClick={this.dontDatePython} hidden = "true">I don't really like you that way...</button>

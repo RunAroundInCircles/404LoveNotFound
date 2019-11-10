@@ -4,7 +4,8 @@ import AskHerOut from './AskHerOut.js';
 import GetToKnowHer from './GetToKnowHer.js';
 import Fortran from './characters/Fortran.png'
 import './python.css';
-
+import soundfile from './music/fortran.wav';
+import Sound from 'react-sound';
 
 var count = 0;
 class twinroute extends Component{
@@ -54,7 +55,7 @@ class twinroute extends Component{
 			count++;
 		}
 		else if(count == 7){
-			var x = "*You both pack up to leave, albiet a little awkwardly. But you want to ask her out now, you can't wait any longer!*"
+			var x = "*You both pack up to leave, albeit a little awkwardly. But you want to ask her out now, you can't wait any longer!*"
 			document.getElementById("textArea2").value = x;
 			count++;
 		}
@@ -92,6 +93,13 @@ class twinroute extends Component{
 	render(){
 		return(
 			<body>
+				<Sound
+					url={soundfile}
+					playStatus={Sound.status.PLAYING}
+					onLoading={this.handleSongLoading}
+					onPlaying={this.handleSongPlaying}
+					onFinishedPlaying={this.handleSongFinishedPlaying}
+				/>
 				<textarea id = 'textArea2' rows = '4' cols= '50' onClick= {this.nextMessage}>*You enter class the next day to find your group for the project*</textarea>
 				<button type="button"id = "ask" onClick={this.ask} hidden = "true">Ask her out!</button>
 				<button type="button"id = "dontask" onClick={this.dontask} hidden = "true">Wait to get to know her.</button>

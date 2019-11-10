@@ -2,8 +2,8 @@ import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
 import './python.css';
 import Fortran from './characters/Fortran.png';
-
-
+import soundfile from './music/fortran.wav';
+import Sound from 'react-sound';
 
 
 var count = 0;
@@ -38,6 +38,13 @@ class AskHerOut extends Component{
 	render(){
 		return(
 			<body>
+				<Sound
+					url={soundfile}
+					playStatus={Sound.status.PLAYING}
+					onLoading={this.handleSongLoading}
+					onPlaying={this.handleSongPlaying}
+					onFinishedPlaying={this.handleSongFinishedPlaying}
+				/>
 				<textarea id = 'textArea2' rows = '4' cols= '50' onClick= {this.nextMessage}>*She is very freightened that you asked her out and ran away.*</textarea>
 				
 				<div class = "bottomleft">

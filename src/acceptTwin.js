@@ -1,8 +1,11 @@
 import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
 import './python.css';
-import TextBack from './textBack.js'
-
+import TextBack from './textBack.js';
+import DontTextBack from './DontTextBack'
+import FortranRoute from './fortranRoute.js';
+import soundfile from './music/twins.wav';
+import Sound from 'react-sound';
 
 var count = 0;
 class AcceptTwin extends Component{
@@ -46,12 +49,27 @@ class AcceptTwin extends Component{
 		)
 	}
 	dontText(){
-	
+		document.body.style.backgroundImage = "url('http://www.graciaviva.cat/png/big/31/315166_black-desktop-background.jpg')";
+		const element1 = (
+			<DontTextBack/>
+		)
+				
+		ReactDOM.render(
+			element1,
+			document.getElementById('root')
+		)
 	}
 	
 	render(){
 		return(
 			<body>
+				<Sound
+					url={soundfile}
+					playStatus={Sound.status.PLAYING}
+					onLoading={this.handleSongLoading}
+					onPlaying={this.handleSongPlaying}
+					onFinishedPlaying={this.handleSongFinishedPlaying}
+				/>
 				<textarea id = 'textArea2' rows = '4' cols= '50' onClick= {this.nextMessage}>*He pulls out his phone and you input your number*</textarea>
 				<button type="button"id = "textBack" onClick={this.textBack} hidden = "true">Text Back</button>
 				<button type="button"id = "donttext" onClick={this.dontText} hidden = "true">Ignore Text</button>

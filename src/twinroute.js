@@ -5,7 +5,8 @@ import DenyTwin from './denyTwin.js';
 import c from './characters/C.png';
 import cplusplus from './characters/C++.png';
 import './python.css';
-
+import soundfile from './music/twins.wav';
+import Sound from 'react-sound';
 
 var count = 0;
 class twinroute extends Component{
@@ -83,7 +84,15 @@ class twinroute extends Component{
 	
 	render(){
 		return(
+				
 			<body>
+				<Sound
+					url={soundfile}
+					playStatus={Sound.status.PLAYING}
+					onLoading={this.handleSongLoading}
+					onPlaying={this.handleSongPlaying}
+					onFinishedPlaying={this.handleSongFinishedPlaying}
+				/>
 				<textarea id = 'textArea2' rows = '4' cols= '50' onClick= {this.nextMessage}>*In your haste to leave, you bump into someone on the way out*</textarea>
 				<button type="button"id = "accept" onClick={this.accept} hidden = "true">Of course!</button>
 				<button type="button"id = "deny" onClick={this.deny} hidden = "true">I don't have a phone.</button>

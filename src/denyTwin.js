@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
 import './python.css';
-import FortranRoute from './fortranRoute.js'
+import DontTextBack from './DontTextBack.js'
 
 var count = 0;
 class DenyTwin extends Component{
@@ -25,7 +25,7 @@ class DenyTwin extends Component{
 	sleep(){
 		document.body.style.backgroundImage = "url('https://www.wallpaperup.com/uploads/wallpapers/2013/04/14/75592/abed3f403850d8a60fc6145ef453de49.jpg')";
 		const element1 = (
-			<FortranRoute/>
+			<DontTextBack/>
 		)
 				
 		ReactDOM.render(

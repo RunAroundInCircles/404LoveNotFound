@@ -17,13 +17,13 @@ class DontTextBack extends Component{
 			count++;
 		}
 		else if(count ==1){
-			document.getElementById("textArea2").hidden = true;
+			document.getElementById("textArea5").hidden = true;
 			document.getElementById("sleep").hidden = false;
 		}
 	}
 	
 	sleep(){
-		//document.body.style.backgroundImage = "url('http://www.graciaviva.cat/png/big/31/315166_black-desktop-background.jpg')";
+		document.body.style.backgroundImage = "url('https://www.wallpaperup.com/uploads/wallpapers/2013/04/14/75592/abed3f403850d8a60fc6145ef453de49.jpg')";
 		const element1 = (
 			<FortranRoute/>
 		)
@@ -36,8 +36,10 @@ class DontTextBack extends Component{
 	
 	render(){
 		return(
+			<body>
 			<textarea id = 'textArea5' rows = '4' cols= '50' onClick= {this.nextMessage}>*You look away from your phone frowing.*</textarea>
 			<button type="button"id = "sleep" onClick={this.sleep} hidden = "true">Go to sleep.</button>
+			</body>
 		)
 	}
 	

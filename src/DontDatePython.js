@@ -1,5 +1,7 @@
 import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
+import soundfile from './music/python.wav';
+import Sound from 'react-sound';
 
 var count = 0;
 class DontDatePython extends Component{
@@ -42,7 +44,16 @@ class DontDatePython extends Component{
 	
 	render(){
 		return(
+		<body>
+			<Sound
+					url={soundfile}
+					playStatus={Sound.status.PLAYING}
+					onLoading={this.handleSongLoading}
+					onPlaying={this.handleSongPlaying}
+					onFinishedPlaying={this.handleSongFinishedPlaying}
+				/>
 			<textarea id = 'textArea4' rows = '4' cols= '50' onClick= {this.nextMessage}>Python: Bad Ending!</textarea>
+			</body>
 		)
 	}
 	
