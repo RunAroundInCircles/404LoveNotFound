@@ -17,7 +17,7 @@ class FortranDate extends Component{
 		
 		if(count == 0){
 			
-			var x = "*And as you sat in that feild of flowers gazing into the night, you fell in love.*"
+			var x = "*And as you sat in that field of flowers gazing into the night, you fell in love.*"
 			document.getElementById("textArea2").value = x;
 			count++;
 			

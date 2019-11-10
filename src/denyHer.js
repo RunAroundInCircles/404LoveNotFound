@@ -32,12 +32,7 @@ class DenyHer extends Component{
 		else if (count == 1){
 			var x = "The End. Fortran's Bad End (Refresh page to play again.)"
 			document.getElementById("textArea2").value = x;
-			count++;
-		}
-		else if(count == 2){
 			
-			document.getElementById("textArea2").hidden = true;
-			document.getElementById("fortran").hidden = true;
 		}
 	}
 	

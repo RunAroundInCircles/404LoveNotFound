@@ -19,23 +19,23 @@ class TwinRouteGoodEnding extends Component{
 			count++;
 			
 		}
-		else if (count == 2){
+		else if (count == 1){
 			var x = "*You finish your coffee and plan to meet again soon.*"
 			document.getElementById("textArea2").value = x;
 			count++;
 		}
-		else if (count == 3){
+		else if (count == 2){
 			document.body.style.backgroundImage = "url('http://www.graciaviva.cat/png/big/31/315166_black-desktop-background.jpg')";
 			var x = "*All three of you graduated together and ended up getting hired at the same company.*"
 			document.getElementById("textArea2").value = x;
 			count++;
 		}
-		else if(count == 4){
+		else if(count == 3){
 			var x = "*You spend your lives laughing and marry good partners.*"
 			document.getElementById("textArea2").value = x;
 			count++;
 		}
-		else if(count == 5){
+		else if(count == 4){
 			var x = "The End. Twin's Good End (Refresh page to play again.)"
 			document.getElementById("textArea2").value = x;
 		}

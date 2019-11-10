@@ -13,10 +13,9 @@ class PythonDate extends Component{
 	}
 	
 	nextMessage(){
-		document.body.style.backgroundImage = "url('http://www.graciaviva.cat/png/big/19/194764_anime-park-background.jpg')";
-		//document.getElementByClassName("body")[0].style.backgroundImage = "url(http://www.graciaviva.cat/png/big/19/194755_anime-park-background.jpg)";
+		document.body.style.backgroundImage = "url('https://static.zerochan.net/Love.Live%21.School.Idol.Festival.full.2432817.png')";
 		//var back = document.getElementById("body");
-		//back.style.backgroundImage = "http://www.graciaviva.cat/png/big/19/194755_anime-park-background.jpg"
+		//back.style.backgroundImage = "http://www"
 		if(count == 0){
 			var x = "Im so glad you made it! You look really pretty today."
 			document.getElementById("textArea2").value = x;
