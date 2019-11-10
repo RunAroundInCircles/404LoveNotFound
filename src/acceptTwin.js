@@ -14,7 +14,7 @@ class AcceptTwin extends Component{
 	}
 	
 	nextMessage(){
-		document.body.style.backgroundImage = "url('https://www.episodeinteractive.com/dcon/pv1_back_INT__FANCY_APARTMENT_BEDROOM___NIGHT.jpg')";
+		document.body.style.backgroundImage = "url('https://cdna.artstation.com/p/assets/images/images/015/467/940/large/anastasia-ermakova-3.jpg?1548442537')";
 		
 		if(count == 0){
 			var x = "*When you get home later that evening, you receive a text from a random number.*"

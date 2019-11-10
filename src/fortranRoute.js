@@ -50,6 +50,7 @@ class twinroute extends Component{
 			count++;
 		}
 		else if(count == 6){
+
 			var x = "*After the meeting you walk to her and ask for her number. She blushes and gives it to you.* Call me any time. *Oh no, your heart can't take this.*"
 			document.getElementById("textArea2").value = x;
 			count++;
@@ -78,7 +79,7 @@ class twinroute extends Component{
 		)
 	}
 	dontask(){
-		document.body.style.backgroundImage = "url('https://www.episodeinteractive.com/dcon/pv1_back_INT__FANCY_APARTMENT_BEDROOM___NIGHT.jpg')";
+		document.body.style.backgroundImage = "url('https://cdna.artstation.com/p/assets/images/images/015/467/940/large/anastasia-ermakova-3.jpg?1548442537')";
 		document.getElementById('root')
 		const element1 = (
 			<GetToKnowHer/>

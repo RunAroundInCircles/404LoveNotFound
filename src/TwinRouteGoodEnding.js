@@ -38,7 +38,7 @@ class TwinRouteGoodEnding extends Component{
 			count++;
 		}
 		else if(count == 4){
-			var x = "The End. Twin's Good End (Refresh page to play again.)"
+			var x = "The End. Twin's Bad End (Refresh page to play again.)"
 			document.getElementById("textArea2").value = x;
 		}
 	}

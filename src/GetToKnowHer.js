@@ -14,6 +14,7 @@ class GetToKnowHer extends Component{
 	}
 	
 	nextMessage(){
+		document.getElementById("fortran").hidden = false;
 		//document.body.style.backgroundImage = "url('https://cdna.artstation.com/p/assets/images/images/012/900/714/large/amanda-ejiri-1.jpg?1537104580')";
 		//document.body.style.backgroundImage = "url('http://www.graciaviva.cat/png/big/31/315166_black-desktop-background.jpg')";
 		if(count == 0){
@@ -34,6 +35,8 @@ class GetToKnowHer extends Component{
 			count++;
 		}
 		else if (count == 3){
+			
+			document.body.style.backgroundImage = "url('https://www.wallpaperup.com/uploads/wallpapers/2013/04/14/75592/abed3f403850d8a60fc6145ef453de49.jpg')";
 			var x = "*However, you shouldn't have felt worry because at the end of the your presentation (which was horrible since two of your partners knew nothing), she stops you before you could sit down.*"
 
 			document.getElementById("textArea2").value = x;

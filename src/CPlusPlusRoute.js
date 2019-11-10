@@ -54,7 +54,7 @@ class CPlusPlusRoute extends Component{
 		}
 		else if(count == 6){
 			document.body.style.backgroundImage = "url('http://www.graciaviva.cat/png/big/31/315166_black-desktop-background.jpg')";
-			var x = "The End. C++'s Bad End (Refresh page to play again.)"
+			var x = "The End. C++'s Good End (Refresh page to play again.)"
 			document.getElementById("textArea2").value = x;
 		}
 	}
