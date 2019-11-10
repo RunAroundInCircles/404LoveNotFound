@@ -1,3 +1,6 @@
+### `Project Description`
+404: Love Not Found is a dating simulator for programming languages. You play as a human who lives in a world where programming languages have taken over as a new race! Will you find love? As you attend your new university under a Human Biology major, you meet new people along the way. Currently has four dateable characters and seven routes. Listen to the amazing music design and adorable characters as you fall in love with coding all over again.
+
 ### `Inspiration:`
 For my senior design project, I am going to be using React.js to create a game. I thought in order to learn how to use the language better I could take a crack at something I always wanted to do: a dating sim! I mean who hasn't thought of dating their favorite coding language.
 
