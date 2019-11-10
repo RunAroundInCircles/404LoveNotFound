@@ -2,7 +2,7 @@
 For my senior design project, I am going to be using React.js to create a game. I thought in order to learn how to use the language better I could take a crack at something I always wanted to do: a dating sim! I mean who hasn't thought of dating their favorite coding language.
 
 ### `What I Learned:`
-One thing I really learned is how complete React and Javascript can get when building games or complete programs like this. Most would say to screw web applications and just make games using Unity. However, I do not back down so easily! While a little complicated, it is possible.
+One thing I really learned is how complicated React and Javascript can get when building games or complete programs like this. Most would say to screw web applications and just make games using Unity. However, I do not back down so easily! While a little complicated, it is possible. Each page can be rendered as a component and upon button clicks you can render a different component.
 
 ### `Languages:`
 For this project I used React.js and Javascript to create the entire game. I had help from multiple libraries in React for sound and visuals including: react-sound and reactDOM.
@@ -11,8 +11,7 @@ For this project I used React.js and Javascript to create the entire game. I had
 There were many challenges I faced while building this code for this project. A big challenge I faced in the beginning was click events on the buttons rendering new components. This was later solved using the ReactDOM library.  I had major problems throughout the project of styling with the CSS and having them all follow a similar style pattern. Which was fixed through meticulously setting properties. 
 
 ### `How to improve in the future:`
-I would like to fix up the visuals and the bugs concerning the choice buttons affecting the background. The button styling in general needs to be worked on. I would also like to flesh out the story more and add more languages if possible.
-
+I would like to fix up the visuals and the bugs concerning the choice buttons affecting the background. The button styling in general needs to be worked on. I would also like to flesh out the story more and add more languages if possible. I would also like to mess with react-sound more and have the songs loop on each page. As well as add animations.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
