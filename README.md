@@ -13,6 +13,13 @@ There were many challenges I faced while building this code for this project. A 
 ### `How to improve in the future:`
 I would like to fix up the visuals and the bugs concerning the choice buttons affecting the background. The button styling in general needs to be worked on. I would also like to flesh out the story more and add more languages if possible. I would also like to mess with react-sound more and have the songs loop on each page. As well as add animations.
 
+### `Credits:`
+Sound Design: Stephanie Milberger<br />
+Character Design: Connie McDowell<br />
+Story: Caleb Logan, Stephanie Milberger, and Connie McDowell<br />
+Code: Caleb Logan
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
