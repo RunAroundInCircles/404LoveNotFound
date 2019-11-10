@@ -1,0 +1,11 @@
+{
+	friends: [
+		{name: "C", affection: 1, timeSeen: 0},
+		{name: "C++", affection: 1, timeSeen: 0},
+		{name: "Python", affection: 1, timeSeen: 0},
+		{name: "Java", affection: 1, timeSeen: 0},
+		{name: "Fortran", affection: 1, timeSeen: 0},
+		{name: "Plankalkül", affection: 1, timeSeen: 0}
+	]
+
+}
